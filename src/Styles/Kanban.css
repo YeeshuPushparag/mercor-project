@@ -1,0 +1,213 @@
+.kanbanContainer {
+  padding: 0 49px;
+  display: flex;
+  justify-content: space-between;
+}
+.kanbanList {
+  width: 355px;
+  background: #f5f5f5;
+  border-radius: 16px;
+  padding: 20px;
+  padding-bottom: 0;
+}
+.kanbanHead {
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 28px;
+}
+.kanbandot {
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
+  margin-right: 8px;
+}
+.addKanban {
+  position: absolute;
+  right: 0;
+}
+.kanbanHeading {
+  font-weight: 500;
+  color: #0d062d;
+  margin-right: 12px;
+}
+.kanbanNumber {
+  width: 20px;
+  height: 20px;
+  font-weight: 500;
+  font-size: 12px;
+  color: #625f6d;
+  background: #e0e0e0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.kanbanHead .bluedot {
+  background-color: #5030e5;
+}
+.kanbanHead .orangedot {
+  background-color: #ffa500;
+}
+.kanbanHead .lightBluedot {
+  background: #76a5ea;
+}
+.kanbanList .blueHead {
+  border-bottom: 3px solid #5030e5;
+}
+.kanbanList .orangeHead {
+  border-bottom: 3px solid #ffa500;
+}
+.kanbanList .lightBlueHead {
+  border-bottom: 3px solid #76a5ea;
+}
+
+.kanbanList .work {
+  width: 314px;
+  background: #ffffff;
+  border-radius: 16px;
+  margin: 20px 0px;
+  padding: 20px;
+  cursor: url("/public/close.png"),move !important;  
+}
+
+.workHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+.workHead .progress {
+  padding: 4px 6px;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 12px;
+}
+.workHead .low {
+  color: #d58d49;
+  background: rgba(223, 168, 116, 0.2);
+}
+.workHead .high {
+  background: rgba(216, 114, 125, 0.1);
+  color: #d8727d;
+}
+.workHead .completed {
+  background: rgba(131, 194, 157, 0.2);
+  color: #68b266;
+}
+.workHead .menu {
+  font-weight: 800;
+  font-size: 16px;
+  letter-spacing: -0.07em;
+  color: #0d062d;
+}
+.aboutWork {
+  margin-bottom: 28px;
+}
+.aboutWork .workName {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #0d062d;
+  margin-top: 6px;
+  margin-bottom: 7px;
+}
+.aboutWork .workImg {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.aboutWork p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #787486;
+}
+
+.workOptions {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+.workOptions .commenter img {
+  width: 24px;
+  height: 24px;
+  border: 1px solid #ffffff;
+  border-radius: 24px;
+}
+
+.workOptions .second {
+  transform: translateX(-5px);
+}
+.workOptions .third {
+  transform: translateX(-10px);
+}
+.workOptions .comment {
+  position: absolute;
+  left: 100px;
+  display: flex;
+  align-items: center;
+}
+.workOptions .file {
+  position: absolute;
+  left: 210px;
+  display: flex;
+  align-items: center;
+}
+.noOfComments,
+.noOfFiles {
+  font-weight: 500;
+  font-size: 12px;
+  color: #787486;
+  margin-left: 4px;
+}
+
+.isDragging{
+  border: 1px dashed rgba(80, 48, 229, 0.59);
+}
+
+@media(max-width:1415px){
+  .kanbanContainer{
+flex-direction: column;
+  }
+  .kanbanList{
+    width: 100%;
+    margin: 30px 0px;
+    padding: 20px;
+  }
+  .workContainer{
+    overflow-x: scroll;
+    width: 100%;
+    display: flex;
+  }
+.workContainer::-webkit-scrollbar {
+    width: 5px !important;
+  }
+  
+  .workContainer::-webkit-scrollbar-track {
+    background: #DBDBDB;
+    border-radius: 100vw;
+    margin-block: 0.5em;
+  }
+  
+  .workContainer::-webkit-scrollbar-thumb {
+    background: #5030E5;
+    border-radius: 100vw;
+  }
+  
+
+
+  .kanbanList .work{
+margin: 0px 10px;
+min-width: 314px;
+  }
+  
+}
+
+@media(max-width:768px){
+  .kanbanContainer{
+    padding: 0px 10px;
+  }
+}

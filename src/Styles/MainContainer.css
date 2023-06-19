@@ -1,0 +1,208 @@
+
+.MainContainer{
+    position: absolute;
+    top: 0;
+    left: 250px;   
+    width: calc(100% - 250px);
+    padding-bottom: 30px;
+}
+.projectDetail{
+    padding: 41px 49px 30px;
+}
+.projectDetail .aboutProject{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.projectDetail .aboutProject .firstHalf{
+display: flex;
+}
+
+.MainContainer .projectName{
+    font-weight: 600;
+font-size: 46px;
+color: #0D062D;
+margin: 0;
+}
+.MainContainer .aboutProject .icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    margin-top: 5px;
+    width: 70px;
+    justify-content: space-between;
+}
+.aboutProject .secondHalf{
+    transform: translateX(32px);
+}
+.secondHalf .inviteSection{
+display: flex;
+align-items: center;
+}
+.inviteSection img{
+    width: 15px;
+    height: 15px;
+    margin-right: 8px;
+}
+.secondHalf .invite{
+font-weight: 500;
+color: #5030E5;
+margin-right: 12px;
+}
+.secondHalf .members{
+    display: flex;
+    align-items: center;
+}
+.secondHalf .members img{
+    border: 1px solid #FFFFFF;
+    width: 38px;
+    height: 38px;
+    border-radius: 38px;
+}
+.secondHalf .members .activeNumber{
+    width: 38px;
+    height: 38px;
+    border-radius: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F4D7DA;
+    color: #D25B68;
+    font-weight: 500;
+font-size: 15px;
+border: 1px solid #FFFFFF;
+transform: translateX(-32px);
+}
+.second{
+transform: translateX(-8px);
+}
+.third{
+transform: translateX(-16px);
+}
+.fourth{
+transform: translateX(-24px);
+}
+
+
+
+
+
+.projectOptions{
+margin-top: 40px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.projectOptions .firstHalf{
+    display: flex;
+    width: 256px;
+    justify-content: space-between;
+    align-items: center;
+}
+.projectOptions .firstHalf .dropDown{
+width: 122px;
+height: 40px;
+border: 1px solid #787486;
+border-radius: 6px;
+display: flex;
+align-items: center;
+}
+
+.projectOptions .firstHalf .dropDown .ddFirst{
+    margin-left: 17px;
+    margin-right: 8px;
+}
+.projectOptions .firstHalf .dropDown .ddSecond{
+    margin-left: 12px;
+}
+.projectOptions .firstHalf .dropDown .dropDownText{
+font-weight:500;
+color: #787486;
+}
+
+.projectOptions .secondHalf .share{
+    display: flex;
+    align-items: center;
+    width: 97px;
+height: 40px;
+
+border: 1px solid #787486;
+border-radius: 6px;
+}
+.projectOptions .secondHalf .share img{
+    margin-left: 16px;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
+
+.projectOptions .secondHalf .share .shareText{
+font-weight: 500;
+color: #787486;
+}
+
+.projectOptions .secondHalf .blueMenu{
+    width: 40px;
+height: 40px;
+background: #5030E5;
+border-radius: 6px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+margin-right: 22px;
+}
+.projectOptions .secondHalf .blueMenu .line{
+   width: 15px;
+   height: 5px;
+   background-color: #FFFFFF;
+   border-radius: 1px;
+   margin:1px;
+}
+/* .projectOptions .secondHalf .blueMenu .secondLine{
+   margin-top: 2px;
+} */
+.projectOptions .secondHalf .pipe{
+    width: 1px;
+    height: 28px;
+    margin: 0px 20px;
+    background-color: #787486;
+}
+
+@media(max-width:950px){
+    .projectDetail {
+        padding: 41px 5px 30px;
+    }
+    
+    .MainContainer .projectName{
+    font-size: 30px;
+    }
+    .MainContainer .aboutProject .icons{
+      width: auto;
+      margin: 0px 2px;
+    }
+  }
+
+  @media(max-width:768px){
+    .MainContainer{
+        left: 0px;
+        width: 100%;
+        padding: 0px 10px;
+    }
+  }
+
+
+  @media(max-width:540px){
+    .aboutProject, .projectOptions{
+        flex-direction: column;
+    }  
+    .aboutProject .secondHalf{
+        margin: 20px 0px;
+        flex-direction: row-reverse;
+    }    
+    .projectOptions .firstHalf{
+        margin: 20px 0px;
+    }
+     
+  }

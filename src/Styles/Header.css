@@ -1,0 +1,140 @@
+.header{
+    height: 88px;
+    border-bottom: 1px solid #DBDBDB;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 49px;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    background-color: white;
+}
+.header .firstHalf{
+    position: relative;
+}
+.header .firstHalf input{
+    width: 417px;
+    height: 44px;
+    border: none;
+    background: #F5F5F5;
+    border-radius: 6px;
+    padding: 2px 0 0 60px;
+}
+.header .firstHalf img{
+    position: absolute;
+    top: 12px;
+    left: 18px;
+}
+
+.firstHalf input::-webkit-input-placeholder { /* Edge */
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 34px;
+line-height: 17px;
+color: #787486;
+      }
+      
+      .firstHalf input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 34px;
+        line-height: 17px;
+        color: #787486;
+      }
+      
+      .firstHalf input::placeholder {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #787486;
+      }
+.secondHalf{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+      .options{
+        width: 120px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .user{
+        margin-left: 50px;
+        display: flex;
+      }
+
+      .user .name{
+        font-weight: 400;
+color: #0D062D;
+      }
+      .user .location{
+        font-size: 14px;
+        font-weight: 400;
+        text-align: right;
+        color: #787486;
+      }
+      .profileImg{
+        margin-left: 18px;
+        width: 38px;
+        height: 38px;
+        border-radius: 38px;
+        overflow: hidden;
+      }
+      .arrowDown{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 8px;
+      }
+.hamMenu{
+  display: none;
+}
+.hamMenu .line{
+width: 25px;
+height: 5px;
+background-color: black;
+border-radius: 5px;
+margin: 2px 0px;
+}
+      @media(max-width:1132px){
+        .header .firstHalf input{
+          width: 217px;
+      }
+      }
+      @media(max-width:950px){
+        .header {
+          padding: 20px 5px;
+        }
+        .options{
+          width: auto;
+        }
+        .options img{
+          margin: 0px 2px;
+        }
+        .user{
+          margin-left: 10px;
+        }
+      }
+@media (max-width:768px) {
+  .hamMenu{
+    display: block;
+    position: absolute;
+    top: 32px;
+    left: 10px;
+    }
+}
+      @media (max-width:540px) {
+        .header{
+          height: auto;
+          flex-direction: column;
+        }
+        .header .secondHalf{
+          margin-top: 20px;
+        }
+      }
